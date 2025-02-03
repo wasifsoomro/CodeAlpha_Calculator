@@ -25,3 +25,9 @@ function calculateResult() {
         display.value = "Error";
     }
 }
+
+// Function to remove the last character from the display
+function backspace() {
+    let display = document.getElementById("display");
+    display.value = display.value.slice(0, -1);
+}
